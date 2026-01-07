@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Girlhood">
+    <meta name="keywords" content="Girls, unica, creaperfectastive, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MUSE</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/plyr.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        /* ===== Fondos generales ===== */
+body {
+    background: #4b2c69; /* lila oscuro */
+    color: #f3e5ff; /* texto claro */
+    font-family: 'Mulish', sans-serif;
+}
+
+/* ===== Encabezados ===== */
+h1, h2, h3, h4, h5, h6 {
+    color: #d3a0f9; /* lila claro para resaltar */
+}
+
+/* ===== Enlaces ===== */
+a {
+    color: #d3a0f9; /* lila claro */
+    text-decoration: none;
+}
+a:hover {
+    color: #f3e5ff; /* blanco al pasar el ratón */
+}
+
+/* ===== Botones ===== */
+.site-btn, .primary-btn {
+    background: linear-gradient(135deg, #7f3fbf, #d3a0f9);
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.site-btn:hover, .primary-btn:hover {
+    background: linear-gradient(135deg, #d3a0f9, #7f3fbf);
+}
+
+/* ===== Cabecera ===== */
+.header {
+    background: #6b258f; /* un lila un poco más claro que el fondo */
+}
+.header__nav ul li a {
+    color: #f3e5ff;
+}
+.header__nav ul li a:hover {
+    color: #d3a0f9;
+}
+
+/* ===== Secciones Hero y Product ===== */
+.hero, .product, .recent__product, .popular__product, .trending__product {
+    background: #4b2c69; /* lila oscuro */
+}
+
+/* ===== Footer ===== */
+.footer {
+    background: #6b258f;
+    color: #f3e5ff;
+}
+.footer a {
+    color: #d3a0f9;
+}
+.footer a:hover {
+    color: #fff;
+}
+
+/* ===== Formulario de contacto ===== */
+.contact__form .input__item {
+    border: 1px solid #d3a0f9;
+    background: #5e3b85; /* lila medio */
+    color: #f3e5ff;
+}
+.contact__form .input__item:focus {
+    border-color: #f3e5ff;
+}
+.contact__form .site-btn {
+    background: linear-gradient(135deg, #7f3fbf, #d3a0f9);
+}
+
+/* ===== Sidebar y pequeñas secciones ===== */
+.product__sidebar__view__item h5 a {
+    color: #d3a0f9;
+}
+.product__sidebar__comment__item h5 a {
+    color: #d3a0f9;
+}
+
+/* ===== Scroll to top ===== */
+#scrollToTopButton span {
+    background: #d3a0f9;
+    color: #fff;
+}
+
+/* ===== Opcional: efectos hover en tarjetas ===== */
+.product__item:hover, .blog__item:hover {
+    box-shadow: 0 10px 20px rgba(159, 82, 205, 0.5);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__MUUSE">
+                        <a href="./index.html">
+                            <img src="img/MUUSE.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Menú</a></li>
+                                <li><a href="./categories.html">Categorías <span class="arrow_carrot-down"></span></a>
+                                    <ul class="dropdown">
+                                        <li><a href="./musica.html">Música</a></li>
+                                        <li><a href="./cine.html">Cine</a></li>
+                                        <li><a href="./literatura.html">Literatura</a></li>
+                                        <li><a href="./vuestros-escritos.html">Vuestros escritos</a></li>
+                                        <li><a href="./unete-a-la-web.html">Únete a la web</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./blog.html">Contacto</a></li>
+                                <li><a href="#">Manifiesto y noticias</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="#" class="search-switch"><span class="icon_search"></span></a>
+                        <a href="./login.html"><span class="icon_profile"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__slider owl-carousel">
+                <div class="hero__items set-bg" data-setbg="img/hero/15.jpg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">Cine</div>
+                                <h2>Mejores películas Girlhood</h2>
+                                <p>Descubre las películas que mejor representan la experincia de crecer siendo chica: emociones intensas, vínculos, identidad y belleaz imperfecta.</p>
+                                <a href="#"><span>Leer Ahora</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="img/hero/4.jpg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">Estética</div>
+                                <h2>Estética Girlhood: moda, imágenes y emoción</h2>
+                                <p>Un viaje por la estética visual de la girlhood en el cine, la música y la fotografía. Una mirada a cómo lo femenino y lo çintimo se convierten en una forma de expresión artística.</p>
+                                <a href="#"><span>Leer Ahora</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__items set-bg" data-setbg="img/hero/14.jpg">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <div class="label">Vosotras</div>
+                                <h2>Diarios de una chica</h2>
+                                <p>Relatos, pensamientos y pequeñas historias que reflejan la intimidad de la girlhood. Un espacio para la vulnerabilidad, la imaginación y el autodescubrimiento... escrito por vosotras.</p>
+                                <a href="#"><span>Leer Ahora</span> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Product Section Begin -->
+    <section class="product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="trending__product">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="section-title">
+                                    <h4>Top Películas</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="btn__all">
+                                    <a href="#" class="primary-btn">Ver Todas <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/GirlInterruptedPoster.jpg">
+                                        <div class="ep">18 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 563</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Girl, Interrupted</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/BlackSwanPoster.jpg">
+                                        <div class="ep">8/10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Black Swan</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/ThirteenPoster.jpg">
+                                        <div class="ep">9,5 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 842</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Thirteen</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/TheVirginSuicidesPoster.jpg">
+                                        <div class="ep">8 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 537</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">The Virgin Suicides</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/PersonaPoster.jpg">
+                                        <div class="ep">9,7 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 947</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Persona</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/trending/PoorThingsPoster.jpg">
+                                        <div class="ep">10 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 454</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Movie</li>
+                                        </ul>
+                                        <h5><a href="#">Poor Things</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular__product">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="section-title">
+                                    <h4>Top Canciones</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="btn__all">
+                                    <a href="#" class="primary-btn">Ver Todas <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/popular/confusing.jpg">
+                                        <div class="ep">8 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 990</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Music</li>
+                                        </ul>
+                                        <h5><a href="#">Girl, so confusing - Charlie xcx</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/popular/ribs.jpg">
+                                        <div class="ep">7,5 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 368</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Music</li>
+                                        </ul>
+                                        <h5><a href="#">Ribs - Lorde</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/popular/lorna.jpg">
+                                        <div class="ep">9 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 847</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Music</li>
+                                        </ul>
+                                        <h5><a href="#">Lip Combo - Metrika, D.Basto y L0rna</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/popular/comog.jpg">
+                                        <div class="ep">10 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 1114</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Music</li>
+                                        </ul>
+                                        <h5><a href="#">Como un G - Rosalia</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/popular/billie.jpg">
+                                        <div class="ep">9 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 794</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Music</li>
+                                        </ul>
+                                        <h5><a href="#">L´Amour de ma vie - Billie Eilish</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/popular/ariana.jpg">
+                                        <div class="ep">8 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 833</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Music</li>
+                                        </ul>
+                                        <h5><a href="#">Intro End of the world - Ariana Grande</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent__product">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-8">
+                                <div class="section-title">
+                                    <h4>Libros de las girls</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="btn__all">
+                                    <a href="#" class="primary-btn">Ver Todas <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/recent/bell.jpg">
+                                        <div class="ep">10 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 736</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Books</li>
+                                        </ul>
+                                        <h5><a href="#">La campana de cristal - Sylvia Plath</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/recent/nada.jpg">
+                                        <div class="ep">8 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 568</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Books</li>
+                                        </ul>
+                                        <h5><a href="#">Nada - Carmen Laforet</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/recent/vergu.jpg">
+                                        <div class="ep">10 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 378</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Books</li>
+                                        </ul>
+                                        <h5><a href="#">La vergüenza - Annie Ernaux</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/recent/simone.jpg">
+                                        <div class="ep">9 / 18</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 567</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Books</li>
+                                        </ul>
+                                        <h5><a href="#">El segundo sexo - Simone de Beauvoir</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/recent/virginia.jpg">
+                                        <div class="ep">10 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 679</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Books</li>
+                                        </ul>
+                                        <h5><a href="#">Una habitación propia - Virginia Wolf</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    <div class="product__item__pic set-bg" data-setbg="img/recent/guada.jpg">
+                                        <div class="ep">8,5 / 10</div>
+                                        <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                                        <div class="view"><i class="fa fa-eye"></i> 857</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+                                            <li>Active</li>
+                                            <li>Books</li>
+                                        </ul>
+                                        <h5><a href="#">El cuerpo en el que nací - Guadalupe Nettel</a></h5>
+</div> <!-- cierre de product__item__text -->
+</div> <!-- cierre de product__item -->
+</div> <!-- cierre de col-lg-4 col-md-6 col-sm-6 -->
+</div> <!-- cierre de row de libros -->
+</div> <!-- cierre de recent__product -->
+</div> <!-- cierre de col-lg-8 principal -->
+
+<!-- Sidebar -->
+<div class="col-lg-4 col-md-12">
+    <div class="product__sidebar">
+        <div class="product__sidebar__view">
+            <div class="section-title">
+                <h5>Top Views</h5>
+            </div>
+            <ul class="filter__controls">
+                <li class="active" data-filter="*">Day</li>
+                <li data-filter=".week">Week</li>
+                <li data-filter=".month">Month</li>
+                <li data-filter=".years">Years</li>
+            </ul>
+            <div class="filter__gallery">
+                <div class="product__sidebar__view__item set-bg mix day years" data-setbg="img/sidebar/oli.jpg">
+                    <div class="ep">18 / ?</div>
+                    <div class="view"><i class="fa fa-eye"></i> 788</div>
+                    <h5><a href="#">¿Nuevo Album de Olivia Rodrigo?</a></h5>
+                </div>
+                <div class="product__sidebar__view__item set-bg mix month week" data-setbg="img/sidebar/raye.jpg">
+                    <div class="ep">18 / ?</div>
+                    <div class="view"><i class="fa fa-eye"></i> 960</div>
+                    <h5><a href="#">Raye, cada vez más grande entre las jóvenes</a></h5>
+                </div>
+                <div class="product__sidebar__view__item set-bg mix week years" data-setbg="img/sidebar/umi.jpg">
+                    <div class="ep">18 / ?</div>
+                    <div class="view"><i class="fa fa-eye"></i> 649</div>
+                    <h5><a href="#">Umimachi Diary, la peli japonesa que devolverá la paz entre hermanas</a></h5>
+                </div>
+                <div class="product__sidebar__view__item set-bg mix years month" data-setbg="img/sidebar/estupor.jpg">
+                    <div class="ep">18 / ?</div>
+                    <div class="view"><i class="fa fa-eye"></i> 723</div>
+                    <h5><a href="#">Estupor y temblores de Amèlie Nothomb pasa al top novelas más leídas</a></h5>
+                </div>
+                <div class="product__sidebar__view__item set-bg mix day" data-setbg="img/sidebar/reli.jpg">
+                    <div class="ep">18 / ?</div>
+                    <div class="view"><i class="fa fa-eye"></i> 905</div>
+                    <h5><a href="#">La estética religiosa y su proporcionalidad directa con el auge de la ultraderecha</a></h5>
+                </div>
+            </div>
+        </div>
+        <!-- Aquí podrías agregar los comentarios si quieres -->
+    </div>
+</div> <!-- cierre de col-lg-4 sidebar -->
+    <div class="product__sidebar__comment">
+        <div class="section-title">
+            <h5>Contenido nuevo</h5>
+        </div>
+        <div class="product__sidebar__comment__item">
+            <div class="product__sidebar__comment__item__pic">
+                <img src="img/sidebar/pizarnik.jpg" alt="">
+            </div>
+            <div class="product__sidebar__comment__item__text">
+                <ul>
+                    <li>Active</li>
+                    <li>Literatura</li>
+                </ul>
+                <h5><a href="#">Recopilatorio de nuestros poemas favoritos de Pizarnik</a></h5>
+                <span><i class="fa fa-eye"></i> 172 Viewes</span>
+            </div>
+        </div>
+        <div class="product__sidebar__comment__item">
+            <div class="product__sidebar__comment__item__pic">
+                <img src="img/sidebar/metri.jpg" alt="">
+            </div>
+            <div class="product__sidebar__comment__item__text">
+                <ul>
+                    <li>Humor</li>
+                    <li>Entrevista</li>
+                </ul>
+                <h5><a href="#">Metrika: "Los hombres a hacer cosas de hombres, cerrar la boca o ir a la guerra"</a></h5>
+                <span><i class="fa fa-eye"></i> 141 Viewes</span>
+            </div>
+        </div>
+        <div class="product__sidebar__comment__item">
+            <div class="product__sidebar__comment__item__pic">
+                <img src="img/sidebar/kika.jpg" alt="">
+            </div>
+            <div class="product__sidebar__comment__item__text">
+                <ul>
+                    <li>Active</li>
+                    <li>Cine</li>
+                </ul>
+                <h5><a href="#">Comentando Kika, la polémica película de Almodóvar</a></h5>
+                <span><i class="fa fa-eye"></i> 245 Viewes</span>
+            </div>
+        </div>
+        <div class="product__sidebar__comment__item">
+            <div class="product__sidebar__comment__item__pic">
+                <img src="img/sidebar/lana.jpg" alt="">
+            </div>
+            <div class="product__sidebar__comment__item__text">
+                <ul>
+                    <li>Active</li>
+                    <li>Música</li>
+                </ul>
+                <h5><a href="#">Momentos polémicos de nuestra querida Lana del Rey</a></h5>
+                <span><i class="fa fa-eye"></i> 197 Viewes</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="page-up">
+        <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="footer__MUSE">
+                    <a href="./index.html"><img src="img/MUUSE.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="footer__nav">
+                    <ul>
+                        <li class="active"><a href="./index.html">Menú</a></li>
+                        <li><a href="./categories.html">Categorías</a></li>
+                        <li><a href="./blog.html">Contacto</a></li>
+                        <li><a href="#">Manifiesto y noticias</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Search model Begin -->
+  <div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch"><i class="icon_close"></i></div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search model end -->
+
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/player.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
