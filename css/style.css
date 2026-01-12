@@ -2366,3 +2366,16 @@ ol {
     width: 100%;
     max-width: 1200px; /* Ajusta según tu diseño */
 }
+
+.comment-form input,
+.comment-form textarea {
+    color: white;          /* letras blancas */
+    background-color: #333; /* fondo oscuro para que se vea el texto */
+    border: none;           /* sin bordes */
+    padding: 10px;          /* un poco de espacio dentro del input */
+    border-radius: 5px;     /* esquinas redondeadas */
+}
+
+.comment-title {
+    color: white;           /* título también en blanco */
+}
